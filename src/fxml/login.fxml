@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="720.0" style="-fx-background-color: #34355e;">
+         <children>
+            <AnchorPane layoutX="202.0" layoutY="120.0" prefHeight="413.0" prefWidth="316.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Text fill="WHITE" layoutX="104.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" wrappingWidth="107.09765625">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="name" focusColor="#ffffffe9" layoutX="70.0" layoutY="89.0" prefHeight="39.0" prefWidth="175.0" promptText="UserName" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXTextField>
+                  <JFXButton fx:id="loginbutton" layoutX="85.0" layoutY="290.0" onAction="#open_main" prefHeight="39.0" prefWidth="146.0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Login" textFill="#f5f2f2" />
+                  <JFXPasswordField fx:id="pass" focusColor="WHITE" layoutX="72.0" layoutY="204.0" prefHeight="41.0" prefWidth="175.0" promptText="PassWord" style="-fx-text-fill: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="23.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@name_tag_50px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="23.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@security_lock_100px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="forgot" layoutX="87.0" layoutY="347.0" onAction="#open_conf" prefHeight="39.0" prefWidth="146.0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Forgot Password?" textFill="#f5f2f2" />
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" layoutX="58.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Hall Allocation System" textAlignment="CENTER" wrappingWidth="604.98681640625">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="31.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="75.0" fitWidth="71.0" layoutX="52.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@automation_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="71.0" layoutX="582.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@automation_64px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

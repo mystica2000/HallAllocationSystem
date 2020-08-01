@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReportPageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="745.0" style="-fx-background-color: #34355e;">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="21.0" prefHeight="564.0" prefWidth="728.0" style="-fx-background-color: #191919;">
+               <children>
+                  <JFXButton fx:id="profile" layoutX="609.0" layoutY="14.0" onAction="#open_profile" prefHeight="30.0" prefWidth="81.0" ripplerFill="#f2f0f0" style="-fx-border-color: #ffffff; -fx-border-radius: 10px; -fx-border-width: 1px; -fx-background-color: #191919;" text="My Profile" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="215.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Hall Allocation System">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="209.0" layoutY="65.0" prefHeight="49.0" prefWidth="246.0">
+                     <children>
+                        <Line endX="-23.0" layoutX="124.0" layoutY="25.0" startX="-74.0" stroke="#fffefe" />
+                        <ImageView fitHeight="50.0" fitWidth="57.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1_c_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="99.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@2_c_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="198.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@3_c_100px.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="-23.0" layoutX="224.0" layoutY="25.0" startX="-74.0" stroke="#fffefe" />
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="email" layoutX="106.0" layoutY="508.0" onAction="#send_email" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Send Report" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <AnchorPane layoutX="51.0" layoutY="220.0" prefHeight="213.0" prefWidth="627.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <JFXTextArea fx:id="body" focusColor="#354986" layoutX="23.0" layoutY="65.0" prefHeight="119.0" prefWidth="582.0" style="-fx-text-fill: black;" text="Dear faculty, &#10;         We Would like to notify you that the submission of the evaluation result of course courseid -coursename has to be done on date or before deadline" />
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="cancel" layoutX="478.0" layoutY="508.0" onAction="#go_back" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXPasswordField fx:id="pass" focusColor="WHITE" labelFloat="true" layoutX="424.0" layoutY="168.0" prefHeight="25.0" prefWidth="254.0" promptText="EMAIL PASSWORD" style="-fx-text-fill: white;" unFocusColor="#fffefe" />
+                  <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="365.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@key_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="emailidhere" fill="WHITE" layoutX="152.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

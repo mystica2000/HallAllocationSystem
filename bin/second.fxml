@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="720.0" style="-fx-background-color: #34355e;">
+         <children>
+            <AnchorPane layoutX="8.0" layoutY="22.0" prefHeight="511.0" prefWidth="704.0" style="-fx-background-color: #191919;">
+               <children>
+                  <JFXButton fx:id="upload_files" layoutX="331.0" layoutY="180.0" onAction="#open_browse" prefHeight="57.0" prefWidth="140.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Upload Files">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="21.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Upload some files see help for more details" />
+                     </tooltip>
+                  </JFXButton>
+                  <JFXButton fx:id="allocate" disable="true" layoutX="331.0" layoutY="331.0" onAction="#open_allocate" prefHeight="57.0" prefWidth="140.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Hall Allocate">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="21.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="To Allocate halls" />
+                     </tooltip>
+                  </JFXButton>
+                  <JFXButton fx:id="profile" layoutX="609.0" layoutY="14.0" onAction="#open_profile" prefHeight="30.0" prefWidth="81.0" ripplerFill="#f2f0f0" style="-fx-border-color: #ffffff; -fx-border-radius: 10px; -fx-border-width: 1px; -fx-background-color: #191919;" text="Profile" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="215.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Hall Allocation System">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="63.0" fitWidth="71.0" layoutX="218.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="57.0" fitWidth="69.0" layoutX="221.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@realtime_protection_64px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="229.0" layoutY="91.0" prefHeight="49.0" prefWidth="246.0">
+               <children>
+                  <Line endX="-23.0" layoutX="124.0" layoutY="25.0" startX="-74.0" stroke="#fffefe" />
+                  <ImageView fitHeight="50.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@1_c_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="99.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@2_c_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="198.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@3_c_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="-23.0" layoutX="224.0" layoutY="25.0" startX="-74.0" stroke="#fffefe" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

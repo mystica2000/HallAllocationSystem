@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfilePageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="769.0" style="-fx-background-color: #34355e;">
+         <children>
+            <AnchorPane layoutY="34.0" prefHeight="535.0" prefWidth="744.0" style="-fx-background-color: #191919;">
+               <children>
+                  <Text fill="WHITE" layoutX="258.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Hall Allocation System">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="user" editable="false" labelFloat="true" layoutX="425.0" layoutY="168.0" prefHeight="25.0" prefWidth="263.0" promptText="Username" style="-fx-text-fill: white;" />
+                  <JFXButton fx:id="cancel" layoutX="463.0" layoutY="473.0" onAction="#open_cancel" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="45.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="email" editable="false" labelFloat="true" layoutX="37.0" layoutY="381.0" prefHeight="25.0" prefWidth="263.0" promptText="EmailId" style="-fx-text-fill: white;" />
+                  <JFXTextField fx:id="fid" editable="false" labelFloat="true" layoutX="37.0" layoutY="168.0" prefHeight="25.0" prefWidth="263.0" promptText="Facutly-id" style="-fx-text-fill: white;" />
+                  <JFXTextField fx:id="contact" editable="false" labelFloat="true" layoutX="417.0" layoutY="394.0" prefHeight="25.0" prefWidth="263.0" promptText="what is your fav. spot" style="-fx-text-fill: white;" />
+                  <JFXButton fx:id="save" layoutX="113.0" layoutY="473.0" onAction="#update_changes" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Save Changes" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="60.0" fitWidth="82.0" layoutX="549.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@edit_user_50px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="82.0" layoutX="169.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@edit_user_50px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="profile" layoutX="549.0" layoutY="92.0" onAction="#allow_edit" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Edit Profile" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXPasswordField fx:id="pass" editable="false" labelFloat="true" layoutX="36.0" layoutY="281.0" prefHeight="25.0" prefWidth="267.0" promptText="Password" />
+                  <JFXPasswordField fx:id="pass1" editable="false" labelFloat="true" layoutX="415.0" layoutY="294.0" prefHeight="25.0" prefWidth="267.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BrowsepageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="720.0" style="-fx-background-color: #34355e;">
+         <children>
+            <AnchorPane layoutX="9.0" layoutY="21.0" prefHeight="591.0" prefWidth="704.0" style="-fx-background-color: #191919;">
+               <children>
+                  <JFXButton fx:id="student" layoutX="411.0" layoutY="191.0" onAction="#open_studentfile" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Browse Student file" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="profile" layoutX="609.0" layoutY="14.0" onAction="#open_profile" prefHeight="30.0" prefWidth="81.0" ripplerFill="#f2f0f0" style="-fx-border-color: #ffffff; -fx-border-radius: 10px; -fx-border-width: 1px; -fx-background-color: #191919;" text="Help" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="215.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Hall Allocation System">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="hall" layoutX="411.0" layoutY="269.0" onAction="#open_hallfile" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Browse Hall Details file" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="faculty" layoutX="411.0" layoutY="370.0" onAction="#open_facultyfile" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Browse Faculty Details" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="student_text" editable="false" layoutX="103.0" layoutY="178.0" prefHeight="25.0" prefWidth="263.0" style="-fx-text-fill: white;" />
+                  <JFXTextField fx:id="hall_text" editable="false" layoutX="103.0" layoutY="274.0" prefHeight="25.0" prefWidth="263.0" style="-fx-text-fill: white;" />
+                  <JFXTextField fx:id="faculty_text" editable="false" layoutX="103.0" layoutY="375.0" prefHeight="25.0" prefWidth="263.0" style="-fx-text-fill: white;" />
+                  <AnchorPane layoutX="209.0" layoutY="65.0" prefHeight="49.0" prefWidth="246.0">
+                     <children>
+                        <Line endX="-23.0" layoutX="124.0" layoutY="25.0" startX="-74.0" stroke="#fffefe" />
+                        <ImageView fitHeight="50.0" fitWidth="57.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@1_c_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@2_c_100px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="198.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@3_c_100px.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="-23.0" layoutX="224.0" layoutY="25.0" startX="-74.0" stroke="#fffefe" />
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="generate" layoutX="266.0" layoutY="541.0" onAction="#open_generate" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Generate" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="exam_text" editable="false" layoutX="109.0" layoutY="470.0" prefHeight="25.0" prefWidth="263.0" style="-fx-text-fill: white;" />
+                  <JFXButton fx:id="exam" layoutX="411.0" layoutY="465.0" onAction="#open_examfile" prefHeight="36.0" prefWidth="172.0" ripplerFill="#f2f0f0" style="-fx-border-color: #2ecc79; -fx-border-radius: 10px; -fx-border-width: 2px; -fx-background-color: #2ecc79;" text="Browse ExamSchedule" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
